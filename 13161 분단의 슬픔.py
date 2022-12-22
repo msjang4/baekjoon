@@ -86,7 +86,6 @@ while bfs():
         ans+=flux
 print(ans)
 
-check = [0]*n
 
 bfs()
 # s에서 u로 유량이흐른다는 건 u가 B진영이 아니라는 뜻
