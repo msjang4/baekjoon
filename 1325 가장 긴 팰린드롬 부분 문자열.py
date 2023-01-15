@@ -7,11 +7,13 @@ except:
 
 inp=read().strip()
 
-s=''
-for i in range(len(inp)):
-    s+='#' #짝수 팰린드롬을 찾기위한 거
-    s+=inp[i]
-s+='#'
+# string concatenation연산은 시간복잡도가 O(len)임
+#s='#'
+#for i in range(len(inp)):
+#    s+=inp[i]
+#    s+='#' #짝수 팰린드롬을 찾기위한 거
+#따라서 join메소드를 이용해야함
+s = f"#{'#'.join(inp)}#"
 n= len(s)
 dp = [0]*n
 ans=0
