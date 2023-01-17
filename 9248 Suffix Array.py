@@ -16,7 +16,7 @@ k=1
 arr = [0]*n
 suf = [i for i in range(n)] #suf [i]는 순위가 i인 접미사 문자열을 가리킴
 while k<=n:#log(n)
-    for i in range(n):
+    for i in range(n): #arr배열을 만들지 않아도되므로 이코드는 최적화되지 않았음.
         #O(n)
         if i+k < n:#2*k길이 접두사를 비교하면 이전에 구해놓은 k길이 접두사 순위에서
             # i랑 i+k 순서쌍으로 비교할수 있다.
